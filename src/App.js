@@ -18,6 +18,11 @@ function App() {
   }
 
 
+  const restarUno = () => {
+    setNumClics(numClics - 1);
+  }
+
+
   return (
   <div className='App'>
     <div className='logo-contenedor'>
@@ -31,7 +36,9 @@ function App() {
 
   <div className='contenedor-principal'>
 
-    <Contador numClics={numClics} />
+    <Contador 
+    numClics={numClics} 
+    />
 
     <Boton
     
@@ -40,15 +47,23 @@ function App() {
     manejarClic={manejarClic}
     />
 
+    
     <Boton 
 
-     texto="Reiniciar"
-     esBotonDeClic={false}
-     manejarClic={reiniciarContador}
+    texto="Restar 1"
+    esBotonDeClic={false}
+    manejarClic={restarUno}
     />
 
-  </div>
+    
+      <Boton 
 
+      texto="Reiniciar"
+      esBotonDeClic={false}
+      manejarClic={reiniciarContador}
+      />
+      
+  </div>
 </div>
 
 
