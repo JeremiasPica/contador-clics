@@ -24,7 +24,8 @@ function App() {
 
 
   return (
-  <div className='App'>
+ 
+ <div className='App'>
     <div className='logo-contenedor'>
       <img
         className='logo'
@@ -64,7 +65,13 @@ function App() {
       />
       
   </div>
+  
+    <div className='texto-final'>
+      <h1>ESPERO TE HAYA GUSTADO! PASATE POR MI<a href="https://github.com/JeremiasPica" target='blank'> GITHUB</a> </h1>
+    </div>
+
 </div>
+
 
 
   )
